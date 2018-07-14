@@ -3,7 +3,6 @@ jobs:
   build:
     working_directory: ~/circle-tmp-folder
     steps:
-      ... # build/dependancies
       - run:
           name: build
           command: 'yarn build'
