@@ -1,37 +1,14 @@
 version: 2
 jobs:
- build:
+  build:
+    working_directory: /tmp/vasko
     docker:
-      - image: circleci/ruby:2.4-node-jessie
-      - image: circleci/postgres:9.4.12-alpine
-    working_directory: ~/circle-tmp-folder
+      - image: circleci/python:3.6.2-stretch-browsers
     steps:
       - checkout
-      - run: bundle install --path vendor/bundle  # install dependencies
-      - run: bundle exec rake db:create db:schema:load  # setup database
       - run:
-          name: Run tests
-          command: rake
-  deploy:
-    docker:
-      - image: circleci/python:2.7-jessie
-    working_directory: ~/circle-tmp-folder
-    steps:
-      - run:
-          name: Install awscli
+          name: Installing dependencies.
           command: sudo pip install awscli
-      - run:
-          name: Deploy to S3
-          command: aws s3 sync /home/ubuntu/goServerless s3://www.vamsipitta.com --delete
-
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - build
       - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master          
+          name: Deploy to S3 if branch is Master.
+          command: aws s3 sync /tmp/vasko/goServerless s3://www.vamsipitta.com/ --delete
