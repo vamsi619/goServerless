@@ -11,4 +11,7 @@ jobs:
           command: sudo pip install awscli
       - deploy:
           name: Deploy to S3 if branch is Master.
-          command: aws s3 sync /tmp/vasko s3://www.vamsipitta.com/ --delete
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            aws s3 sync /tmp/vasko s3://www.vamsipitta.com/ --delete
+            fi
