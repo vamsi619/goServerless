@@ -15,3 +15,6 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
             aws s3 sync /tmp/vasko s3://www.vamsipitta.com/ --delete
             fi
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+            aws s3 sync /tmp/vasko s3://vamsipitta/ --delete
+            fi
