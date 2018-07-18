@@ -1,13 +1,10 @@
-# I AM X
-I AM X is a minimalist, modern and well-crafted responsive HTML5 resume template for any kind of creative professionals to show their education, experience, skills, and works history in a perfect way.
+# goServerless
+This an effort to build highly available, scalable, serverless website using Amazon S3 bucket. This website is designed to handle sudden traffic spikes and grow unlimitedly without human intervention.
 
-![alt text](http://trendytheme.net/wp-content/uploads/edd/2015/10/Futani-Admin-Board-Preview-11.jpg "iamx")
+Thanks to <a href="https://github.com/ahmedfaruk" target="_blank">Ahmed Faruk</a> for providing a well-crafted responsive HTML5 resume template - I AM X.
 
-#Demo:
-<a href="http://trendytheme.net/demo/iamx/v/" target="_blank">Template Demo</a>
-
-#License: 
-Use it freely but please do not republish, distribute or sell "as-is". Please credit the designer and developer when you use it in your project.
+#goServerless Website:
+<a href="http://www.vamsipitta.com" target="_blank">Vamsi Pitta</a>
 
 #Credits: 
 - <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
@@ -18,6 +15,7 @@ Use it freely but please do not republish, distribute or sell "as-is". Please cr
 - <a href="http://vestride.github.io/Shuffle/" target="_blank">Shuffle</a>
 
 #Misc
-Follow Ahmed: <a href="https://twitter.com/ahmedfaruk_me" target="_blank">Twitter</a>, <a href="https://www.facebook.com/ahmedfaruk.me" target="_blank">Facebook</a>, <a href="https://plus.google.com/u/0/114068300126923667161" target="_blank">Google+</a>
+Follow Vamsi Pitta: <a href="https://www.facebook.com/vamsi.pitta" target="_blank">Facebook</a>, <a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank">LinkedIn</a>
 
+#Theme Copyright
 <a href="http://trendytheme.net/" target="_blank">&copy; TrendyTheme </a>
