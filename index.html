@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122493111-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122493111-1');
+  </script>
+  <meta name="google-site-verification" content="32x8K-cp0_BW2DTegpIyqzDqSBq8QlX483b5moyuIho" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Responsive Personal Portfolio">
@@ -57,10 +67,10 @@
 
       <div class="social-icons">
         <ul class="list-inline">
-          <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://github.com/vpitt4" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Facebook');"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'LinkedIn');"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Instagram');"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://github.com/vpitt4" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Github');"><i class="fa fa-github"></i></a></li>
         </ul>
       </div> <!-- /.social-icons -->
 		</div>
@@ -84,18 +94,18 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
+					<a class="navbar-brand" href="index.html" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Index');"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+						<li><a href="#home" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Home</a></li>
+						<li><a href="#about" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'About');">About</a></li>
+            <li><a href="#projects" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Projects');">Projects</a></li>
+						<li><a href="#resume" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Resume');">Resume</a></li>
+						<li><a href="#skills" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Skills');">Skills</a></li>
+						<li><a href="#certificates" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Certificates');">Certificates</a></li>
+            <li><a href="#contact" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Contact</a></li>
 					</ul>
 				</div>
 			</div><!-- .container -->
@@ -117,7 +127,7 @@
               </div>
               <ul>
                 <li><strong>Name:</strong> Vamsi Pitta</li>
-                <li><strong>Email:</strong> <a href="mailto:pitta.vamsi619@outlook.com">pitta.vamsi619@outlook.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:pitta.vamsi619@outlook.com" onclick="ga('send', 'event', 'Email', 'Click', 'Send Email');">pitta.vamsi619@outlook.com</a></li>
               </ul>
             </div>
           </div> <!-- col-md-4 -->
@@ -147,7 +157,7 @@
             </div>
 
             <div class="download-button">
-              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+              <a class="btn btn-info btn-lg" href="#contact" onclick="ga('send', 'event', 'Contact', 'Click', 'Send Me Message');"><i class="fa fa-paper-plane"></i>Send me message</a>
               <!-- <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>download my cv</a> -->
             </div>
           </div>
@@ -202,7 +212,7 @@
             <article class="blog-post-wrapper">
               <div class="figure">    
                 <div class="post-thumbnail">
-                  <a href="goServerless.html"><img src="assets/images/blog/goPro.jpg" class="img-responsive " alt=""></a>
+                  <a href="goServerless.html" onclick="ga('send', 'event', 'Projects', 'Click', 'Go Serverless');"><img src="assets/images/blog/goPro.jpg" class="img-responsive " alt=""></a>
                 </div>
                   <!-- <i class="fa fa-file-photo-o"></i> -->
               </div><!-- /.figure -->
@@ -246,7 +256,7 @@
             <article class="blog-post-wrapper">
               <div class="figure">    
                 <div class="post-thumbnail">
-                  <a href="movie-reports.html"><img src="assets/images/blog/umr.jpg" class="img-responsive " alt=""></a>
+                  <a href="movie-reports.html" onclick="ga('send', 'event', 'Projects', 'Click', 'Movie Reports');"><img src="assets/images/blog/umr.jpg" class="img-responsive " alt=""></a>
                 </div>
                   <!-- <i class="fa fa-file-photo-o"></i> -->
               </div><!-- /.figure -->
@@ -296,14 +306,14 @@
 
 
     <!-- Video Section -->
-    <!-- <section id="video" class="video-section">
+    <section id="video" class="video-section">
       <div class="tf-bg-overlay">
         <div class="container">
           <div class="control">
-            <div class="video-intro text-center"> -->
+            <div class="video-intro text-center">
               <!-- <button type="button" class="play-trigger" data-toggle="modal" data-target="#tour-video"><i class="fa fa-play"></i></button>
               <h2>Video Introducing</h2> -->
-            <!-- </div> -->
+            </div>
               
             <!-- Video Modal -->
             <!-- <div class="modal modal-video" id="tour-video">
@@ -325,13 +335,13 @@
               <!--/.modal-dialog-->
             <!-- </div> -->
             <!--/.modal-->                    
-          <!-- </div> -->
+          </div>
           <!--/.control-->
-        <!-- </div> -->
+        </div>
         <!--/.container-->
-      <!-- </div> -->
+      </div>
       <!--/.overlay-->
-    <!-- </section> -->
+    </section>
     <!-- /.Video Section -->
 
 
@@ -596,10 +606,10 @@
         <h2 class="section-title wow fadeInUp">Certificates</h2>
 
         <ul class="list-inline" id="filter">
-            <li><a class="active" data-group="all">All</a></li>
-            <li><a data-group="aws">Amazon Web Services</a></li>
-            <li><a data-group="ga">Google</a></li>
-            <li><a data-group="brainbench">Brainbench</a></li>
+            <li><a class="active" data-group="all" onclick="ga('send', 'event', 'Certificates Group', 'Click', 'All');">All</a></li>
+            <li><a data-group="aws" onclick="ga('send', 'event', 'Certificates Group', 'Click', 'Amazon Web Services');">Amazon Web Services</a></li>
+            <li><a data-group="ga" onclick="ga('send', 'event', 'Certificates Group', 'Click', 'Google Analytics');">Google</a></li>
+            <li><a data-group="brainbench" onclick="ga('send', 'event', 'Certificates Group', 'Click', 'Brainbench');">Brainbench</a></li>
         </ul>
 
         <div class="row">
@@ -609,7 +619,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/aws.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/aws.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Solutions Architect - Associate');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/aws.jpg" alt="image"> 
@@ -624,7 +634,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/java1.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/java1.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Java 1');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/java1.jpg" alt="image"> 
@@ -639,7 +649,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/java2.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/java2.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Java 2 Fundamentals');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/java2.jpg" alt="image"> 
@@ -654,7 +664,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/ga.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/ga.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Google Analytics');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/ga.jpg" alt="image"> 
@@ -669,7 +679,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/html.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/html.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'HTML5');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/html.jpg" alt="image"> 
@@ -684,7 +694,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/css.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/css.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'CSS2');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/css.jpg" alt="image"> 
@@ -699,7 +709,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/c++.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/c++.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'C++ Fundamentals');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/c++.jpg" alt="image"> 
@@ -714,7 +724,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/js.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/js.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Javascript');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/js.jpg" alt="image"> 
@@ -729,7 +739,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/pc.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/pc.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'Programming Concepts');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/pc.jpg" alt="image"> 
@@ -744,7 +754,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/php.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/php.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'PHP 4');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/php.jpg" alt="image"> 
@@ -759,7 +769,7 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="assets/images/certs/rdbms.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="assets/images/certs/rdbms.jpg" onclick="ga('send', 'event', 'Certificates', 'Click', 'RDBMS');"><i class="fa fa-search-plus"></i></a>
                     <!-- <a href="#"><i class="fa fa-link"></i></a> -->                          
                   </div><!-- /.links -->
                   <img src="assets/images/certs/rdbms.jpg" alt="image"> 
@@ -869,10 +879,10 @@
             </div> -->
             <div class="social-icons text-center">
               <ul class="list-inline">
-                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://github.com/vpitt4" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Facebook');"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'LinkedIn');"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Instagram');"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/vpitt4" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Github');"><i class="fa fa-github"></i></a></li>
               </ul>
             </div> <!-- /.social-icons -->
           </div>

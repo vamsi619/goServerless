@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122493111-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122493111-1');
+  </script>
+  <meta name="google-site-verification" content="32x8K-cp0_BW2DTegpIyqzDqSBq8QlX483b5moyuIho" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Responsive Personal Portfolio">
@@ -59,18 +69,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
+          <a class="navbar-brand" href="index.html" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Index');"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
         </div>
 
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#resume">Resume</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#certificates">Certificates</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            li><a href="index.html#home" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Home</a></li>
+            <li><a href="index.html#about" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'About');">About</a></li>
+            <li><a href="index.html#projects" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Projects');">Projects</a></li>
+            <li><a href="index.html#resume" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Resume');">Resume</a></li>
+            <li><a href="index.html#skills" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Skills');">Skills</a></li>
+            <li><a href="index.html#certificates" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Certificates');">Certificates</a></li>
+            <li><a href="index.html#contact" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Contact</a></li>
           </ul>
         </div>
       </div><!-- .container -->
@@ -88,16 +98,16 @@
               <p><strong>Go Serverless</strong> is an effort to build highly available, scalable, serverless website using Amazon S3 bucket. This website is designed to handle sudden traffic spikes and grow unlimitedly without human intervention.</p>
             </div>
 
-            <div class="short-info wow fadeInUp">
-              <h3 style="margin-bottom: 0px ! important;">Highlights</h3>
+            <div class="wow fadeInUp">
+              <h3>Highlights</h3>
               <ul style="list-style-type:disc; padding: 14px;">
                 <li>No server is used to host this website. It is hosted in Amazon S3 bucket.</li>
-                <li>Source files are stored in Github public repository.</li>
                 <li>Deployment to Amazon S3 bucket is automated using CircleCI which is integrated with Github.</li>
                 <li>Google Analytics tracking code collects data about of user interaction with the website and sends weekly reports to Admin.</li>
                 <li>Search Engine Optimization is performed.</li>
+                <li>Source files are stored in Github public repository.</li>
               </ul>
-              <p><strong>Documentation:</strong><a href="https://uisad-my.sharepoint.com/:w:/g/personal/vpitt4_uisad_uis_edu/EdFjO45T6VhAuKCD1GHXfbsBXnAasUF3JZHAM_iWyGNnOA" target="_blank"> Reference URLs</a></p>
+              <p><strong>Documentation:</strong><a href="https://uisad-my.sharepoint.com/:w:/g/personal/vpitt4_uisad_uis_edu/EdFjO45T6VhAuKCD1GHXfbsBXnAasUF3JZHAM_iWyGNnOA" target="_blank" onclick="ga('send', 'event', 'Documentation', 'Click', 'Reference URLs');"> Reference URLs</a></p>
             </div>
       </div> <!-- /.container -->
     </section><!-- End About Section -->
@@ -112,10 +122,10 @@
             </div> -->
             <div class="social-icons text-center">
               <ul class="list-inline">
-                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://github.com/vpitt4" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Facebook');"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'LinkedIn');"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Instagram');"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/vpitt4" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Github');"><i class="fa fa-github"></i></a></li>
               </ul>
             </div> <!-- /.social-icons -->
           </div>
