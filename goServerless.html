@@ -11,6 +11,16 @@
 
     gtag('config', 'UA-122493111-1');
   </script>
+  <script>
+    var trackOutboundLink = function(category,label,url) {
+      gtag('event', 'click', {
+        'event_category': category ,
+        'event_label': label,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+  </script>
   <meta name="google-site-verification" content="32x8K-cp0_BW2DTegpIyqzDqSBq8QlX483b5moyuIho" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +28,7 @@
 	<meta name="author" content="Vamsi Pitta">
   <meta name="keywords" content="S3,static webpage,circleci,github,automation,aws">
 
-	<title>Vamsi Pitta</title>
+	<title>Go Serverless</title>
 
   <!-- Web Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -69,18 +79,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Index');"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
+          <a class="navbar-brand" href="index.html" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Index'});"><h3><span style="color: #52b3d9;">Vamsi </span>Pitta</h3></a>
         </div>
 
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            li><a href="index.html#home" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Home</a></li>
-            <li><a href="index.html#about" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'About');">About</a></li>
-            <li><a href="index.html#projects" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Projects');">Projects</a></li>
-            <li><a href="index.html#resume" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Resume');">Resume</a></li>
-            <li><a href="index.html#skills" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Skills');">Skills</a></li>
-            <li><a href="index.html#certificates" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Certificates');">Certificates</a></li>
-            <li><a href="index.html#contact" onclick="ga('send', 'event', 'Navigation Menu', 'Click', 'Home');">Contact</a></li>
+            <li><a href="index.html#home" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Home'});">Home</a></li>
+            <li><a href="index.html#about" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'About'});">About</a></li>
+            <li><a href="index.html#projects" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Projects'});">Projects</a></li>
+            <li><a href="index.html#resume" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Resume'});">Resume</a></li>
+            <li><a href="index.html#skills" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Skills'});">Skills</a></li>
+            <li><a href="index.html#certificates" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Certificates'});">Certificates</a></li>
+            <li><a href="index.html#contact" onclick="gtag('event', 'click' , {'event_category': 'Navigation Menu','event_label': 'Contact'});">Contact</a></li>
           </ul>
         </div>
       </div><!-- .container -->
@@ -102,12 +112,12 @@
               <h3>Highlights</h3>
               <ul style="list-style-type:disc; padding: 14px;">
                 <li>No server is used to host this website. It is hosted in Amazon S3 bucket.</li>
-                <li>Deployment to Amazon S3 bucket is automated using CircleCI which is integrated with Github.</li>
-                <li>Google Analytics tracking code collects data about of user interaction with the website and sends weekly reports to Admin.</li>
+                <li>Deployment to Amazon S3 bucket is automated using CircleCI which is integrated with GitHub.</li>
+                <li>Google Analytics tracking code collects data about user interaction with the website and sends reports to Admin.</li>
                 <li>Search Engine Optimization is performed.</li>
-                <li>Source files are stored in Github public repository.</li>
+                <li>Source files are stored in GitHub public repository.</li>
               </ul>
-              <p><strong>Documentation:</strong><a href="https://uisad-my.sharepoint.com/:w:/g/personal/vpitt4_uisad_uis_edu/EdFjO45T6VhAuKCD1GHXfbsBXnAasUF3JZHAM_iWyGNnOA" target="_blank" onclick="ga('send', 'event', 'Documentation', 'Click', 'Reference URLs');"> Reference URLs</a></p>
+              <p><strong>Documentation:</strong><a href="https://uisad-my.sharepoint.com/:w:/g/personal/vpitt4_uisad_uis_edu/EdFjO45T6VhAuKCD1GHXfbsBXnAasUF3JZHAM_iWyGNnOA" target="_blank" onclick="trackOutboundLink('Documentation','Reference URLs','https://uisad-my.sharepoint.com/:w:/g/personal/vpitt4_uisad_uis_edu/EdFjO45T6VhAuKCD1GHXfbsBXnAasUF3JZHAM_iWyGNnOA'); return false;"> Reference URLs</a></p>
             </div>
       </div> <!-- /.container -->
     </section><!-- End About Section -->
@@ -122,10 +132,10 @@
             </div> -->
             <div class="social-icons text-center">
               <ul class="list-inline">
-                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Facebook');"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'LinkedIn');"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Instagram');"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://github.com/vpitt4" target="_blank" onclick="ga('send', 'event', 'Social Icons', 'Click', 'Github');"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/vamsi.pitta" target="_blank" onclick="trackOutboundLink('Social Icons','Facebook','https://www.facebook.com/vamsi.pitta'); return false;"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/venkata-vamsi-pitta/" target="_blank" onclick="trackOutboundLink('Social Icons','LinkedIn','https://www.linkedin.com/in/venkata-vamsi-pitta/'); return false;"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/vamsipitta619/" target="_blank" onclick="trackOutboundLink('Social Icons','Instagram','https://www.instagram.com/vamsipitta619/'); return false;"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/vpitt4" target="_blank" onclick="trackOutboundLink('Social Icons','GitHub','https://github.com/vpitt4'); return false;"><i class="fa fa-github"></i></a></li>
               </ul>
             </div> <!-- /.social-icons -->
           </div>
