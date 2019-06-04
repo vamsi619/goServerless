@@ -306,7 +306,7 @@ ul.list-check li::before {
 
 
 #home {
-	background: url(../images/home-3.jpg) no-repeat center center;
+	background: url(../images/home-3.png) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
@@ -1250,7 +1250,7 @@ Resume Timeline
 
 /* === Facts Section === */
 .facts-section {
-    background: url(../../assets/images/home-3.jpg) no-repeat center center;
+    background: url(../../assets/images/home-3.png) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
