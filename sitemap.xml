@@ -9,22 +9,32 @@
 
 <url>
   <loc>http://www.vamsipitta.com/</loc>
-  <lastmod>2018-07-18T04:52:57+00:00</lastmod>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.vamsipitta.com/index.html</loc>
-  <lastmod>2018-07-18T04:52:57+00:00</lastmod>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.vamsipitta.com/goServerless.html</loc>
-  <lastmod>2018-07-18T04:52:57+00:00</lastmod>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.vamsipitta.com/movie-reports.html</loc>
-  <lastmod>2018-07-18T04:52:57+00:00</lastmod>
+  <loc>http://www.vamsipitta.com/sample-architecture-1.html</loc>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.vamsipitta.com/sample-architecture-2.html</loc>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.vamsipitta.com/factors-influencing-cloud-migration.html</loc>
+  <lastmod>2019-06-04T04:52:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
