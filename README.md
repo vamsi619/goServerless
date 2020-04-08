@@ -19,3 +19,5 @@ Follow Vamsi Pitta: <a href="https://www.facebook.com/vamsi.pitta" target="_blan
 
 #Theme Copyright
 <a href="http://trendytheme.net/" target="_blank">&copy; TrendyTheme </a>
+
+#Welcome!
